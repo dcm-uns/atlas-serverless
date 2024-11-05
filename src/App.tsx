@@ -32,6 +32,41 @@ const Login = ({ setUser }: LoginProps) => {
 
 
 
+// Esta función holaTADW simplemente muestra un texto.
+// Debe crearse en MongoDB Atlas
+/*  
+const Saludar = () => {
+  const [texto, setTexto] = useState("");
+  const getsaludo = async () => {
+    const s = await app.currentUser?.functions.holaTADW();
+    setTexto(s.result);
+  };
+  getsaludo();
+  return <h2>{texto}</h2>;
+};
+ */
+
+
+// Esta función unaPeli() muestra el plot de una película
+// Debe definirse en MongoDB 
+/* 
+const UnaPeli = () => {
+  const [texto, setTexto] = useState("");
+  const getPeli = async () => {
+    const s = await app.currentUser?.functions.unaPeli();
+    console.log(s);
+    setTexto(s.fullplot);
+    
+  };
+  getPeli();
+  return <h2>Plot: {texto}</h2>;
+};
+ */
+
+
+
+
+
 const App = () => {
   // Keep the logged in Realm user in local state. This lets the app re-render
   // whenever the current user changes (e.g. logs in or logs out).
